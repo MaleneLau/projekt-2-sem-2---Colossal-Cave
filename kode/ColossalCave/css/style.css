@@ -1,0 +1,113 @@
+/* variable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 10px 0 0 10px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.gameplay-box {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #fff;
+  height: 80%;
+  margin-top: 40px;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+  opacity: 72%;
+  position: relative;
+}
+
+.textBox {
+  display: flex;
+  height: 120px;
+  width: 70%;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 75%;
+}
+
+.text-span {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+
+.photo {
+  background-image: url("../img/backgroundPhoto.jpg");
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -4;
+}
+
+.blink {
+  opacity: 0;
+}
+
+.btn-1 {
+  width: 150px;
+  height: 40px;
+  border: solid #707070;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px 5px 5px 5px;
+  background-color: black;
+  color: #fff;
+}
+
+.btn-2 {
+  width: 150px;
+  height: 40px;
+  border: solid #707070;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px 5px 5px 5px;
+  background-color: black;
+  color: #fff;
+}
+
+.btn-3 {
+  width: 150px;
+  height: 40px;
+  border: solid #707070;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px 5px 5px 5px;
+  background-color: black;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

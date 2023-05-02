@@ -1,6 +1,7 @@
 // variabler
 const inputField = document.querySelector("#userInput");
 const main = document.querySelector("main");
+const gameplayBox = document.querySelector(".gameplay-box");
 let userInput = []; 
 
 // blink
@@ -13,7 +14,7 @@ setInterval(function() {
 const addText = (Text) => {
     let paragraph = document.createElement("p");
     paragraph.innerText = Text;
-    main.appendChild(paragraph);
+    gameplayBox.appendChild(paragraph);
     main.lastChild.scrollIntoView();
 }
 

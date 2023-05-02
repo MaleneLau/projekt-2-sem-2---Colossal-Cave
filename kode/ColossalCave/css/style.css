@@ -64,28 +64,28 @@ main {
   grid-template-rows: 1fr auto;
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #fff;
-  height: 80%;
+  min-height: 70%;
   margin-top: 40px;
   margin-right: 10%;
   margin-left: 10%;
   width: 80%;
   opacity: 72%;
   position: relative;
+  text-align: start;
 }
 
 .textBox {
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 70%;
-  align-content: center;
   justify-content: flex-start;
   align-items: center;
   margin-left: 15%;
   margin-right: 15%;
   background-color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
   z-index: 1;
-  position: absolute;
-  top: 75%;
+  position: sticky;
 }
 
 .text-span {

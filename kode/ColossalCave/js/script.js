@@ -11,11 +11,13 @@ setInterval(function() {
 }, 600);
 
 // Insert text
-const addText = (Text) => {
-    let paragraph = document.createElement("p");
-    paragraph.innerText = Text;
-    gameplayBox.appendChild(paragraph);
-    main.lastChild.scrollIntoView();
+const addText = (text, container = main) => {
+    if (container === gameplayBox) {
+        let paragraph = document.createElement("p");
+        paragraph.innerText = text;
+        container.appendChild(paragraph);
+        container.lastChild.scrollIntoView();
+    }
 }
 
 const backpack = {
@@ -30,21 +32,22 @@ const backpack = {
 }
 
 const whatToDo = (userInput) => {
+    addText(userInput, gameplayBox);
     switch(userInput) {
         case "help":
-            addText ("Direct me with commands 1 or 2 words.");
+            addText("Direct me with commands 1 or 2 words.", gameplayBox);
             break;
         case "backpack": 
             backpack.seeBackpack();
             break;
         case "info":
-            addText("....");
+            addText("....", gameplayBox);
             break;
         case "yes":
-            addText("Somewhere nearby is a Colossal Cave, where others have found fortunes in treasure and gold, though it is rumonred that some who enter is never seen again! I will be your eyes and hands! Direct me with commands 1 or 2 words. Should you get stuck, type “help” or “info” for some general hints. ");
+            addText("Somewhere nearby is a Colossal Cave, where others have found fortunes in treasure and gold, though it is rumonred that some who enter is never seen again! I will be your eyes and hands! Direct me with commands 1 or 2 words. Should you get stuck, type “help” or “info” for some general hints. ", gameplayBox);
             break;
         default: 
-            addText("Sorry, I didn't understand that");
+            addText("Sorry, I didn't understand that", gameplayBox);
     }
 }
 

@@ -49,11 +49,11 @@ const whatToDo = (userInput) => {
             break;
 // Troll
         case "fight":
-            addText("", gameplayBox);
+            addText("As you approach the Troll, you unsheathe your sword, ready to fight. However, the Troll interrupts your attack with a sly smile and begins to speak in a cryptic manner, as if telling you a riddle.", gameplayBox);
             break;
 
         case "talk":
-            addText("", gameplayBox);
+            addText("As you approach the Troll, you decide to try and talk to it. To your surprise, the Troll responds with a riddle instead of attacking you.", gameplayBox);
             break;
 
         case "that":
